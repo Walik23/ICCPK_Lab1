@@ -100,9 +100,9 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 	  for (int i = 0; i < 8; i++) {
-		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_RESET);
-		  delay_cycles(2100000);
 		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_SET);
+		  delay_cycles(2100000);
+		  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_RESET);
 		  delay_cycles(2100000);
 	  }
 	  delay_cycles(21000000);
